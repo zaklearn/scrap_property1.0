@@ -1,0 +1,38 @@
+# .streamlit/config.toml
+# Streamlit configuration for OnTheMarket Scraper
+
+[global]
+# Global configuration
+dataFrameSerialization = "legacy"
+
+[server]
+# Server configuration
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 200
+
+[browser]
+# Browser configuration
+gatherUsageStats = false
+serverAddress = "0.0.0.0"
+
+[theme]
+# App theme
+primaryColor = "#FF6B6B"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
+
+[client]
+# Client configuration
+caching = true
+displayEnabled = true
+showErrorDetails = true
+
+[logger]
+# Logging configuration
+level = "info"
+messageFormat = "%(asctime)s %(message)s"
